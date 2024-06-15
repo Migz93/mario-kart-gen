@@ -1,8 +1,22 @@
 # mario-kart-gen
 Mario Kart 8 Setup Generator
 
+You need to copy the files from this repo in the "data" folder into your mapping location below.
 ```
-docker run --net bridge --name mario-kart-gen -p 3000:3000 --restart unless-stopped -e "DATABASE_URL=mongodb://172.17.0.1/myDb" -e "PORT=3000" -e "SESSION_SECRET=b43905f561734854070c9ca3329e6de4" miguel1993/mario-kart-gen:latest
+services:
+  mario-kart-gen:
+    container_name: mario-kart-gen
+    image: miguel1993/mario-kart-gen:latest
+    network_mode: bridge
+    ports:
+      - 3000:3000
+    volumes:
+      - /opt/mario-kart-gen/data:/usr/src/app/data/
+    environment:
+      - DATABASE_URL=mongodb://172.17.0.1/myDb
+      - PORT=3000
+      - SESSION_SECRET=b43905f561734854070c9ca3329e6de4
+    restart: unless-stopped
 ```
 
 Need external mongodb container running
