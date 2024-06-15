@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/_head.ejs') %>
+<body>
+<%- include('../partials/_header.ejs') %>
+<main role="main" class="container mt-4">
+  <h1>Generate Weekly Setup</h1>
+  <form action="/admin/generate-setup" method="POST">
+    <div class="mb-3">
+      <label for="carSelect">Car</label>
+      <select id="carSelect" name="car" class="form-select">
+        <% cars.forEach(function(car) { %>
+          <option value="<%= car %>"><%= car %></option>
+        <% }); %>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="characterSelect">Character</label>
+      <select id="characterSelect" name="character" class="form-select">
+        <% characters.forEach(function(character) { %>
+          <option value="<%= character %>"><%= character %></option>
+        <% }); %>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="gliderSelect">Glider</label>
+      <select id="gliderSelect" name="glider" class="form-select">
+        <% gliders.forEach(function(glider) { %>
+          <option value="<%= glider %>"><%= glider %></option>
+        <% }); %>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="wheelSelect">Wheel</label>
+      <select id="wheelSelect" name="wheel" class="form-select">
+        <% wheels.forEach(function(wheel) { %>
+          <option value="<%= wheel %>"><%= wheel %></option>
+        <% }); %>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="trackSelect">Track</label>
+      <select id="trackSelect" name="track" class="form-select">
+        <% tracks.forEach(function(track) { %>
+          <option value="<%= track %>"><%= track %></option>
+        <% }); %>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Generate Setup</button>
+  </form>
+</main>
+<%- include('../partials/_footer.ejs') %>
+<script src="/js/main.js"></script>
+</body>
+</html>

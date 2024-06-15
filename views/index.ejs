@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+  <body>
+<%- include('partials/_header.ejs') %>
+    <main role="main" class="container mt-4">
+      <div class="text-center">
+        <h1>Mario Kart Gen</h1>
+        <% if (setups && setups.length > 0) { %>
+          <div class="setup-details mt-5">
+            <h2>Weekly Setup</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Car</th>
+                  <th scope="col">Character</th>
+                  <th scope="col">Glider</th>
+                  <th scope="col">Wheel</th>
+                  <th scope="col">Track</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% setups.forEach(function(setup, index) { %>
+                  <% if (index === 0) { %>
+                    <tr>
+                      <td><%= setup.car %></td>
+                      <td><%= setup.character %></td>
+                      <td><%= setup.glider %></td>
+                      <td><%= setup.wheel %></td>
+                      <td><%= setup.track %></td>
+                    </tr>
+                  <% } %>
+                <% }); %>
+              </tbody>
+            </table>
+          </div>
+          <div class="previous-setups mt-5">
+            <h2>Previous Setups</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Week</th>
+                  <th scope="col">Car</th>
+                  <th scope="col">Character</th>
+                  <th scope="col">Glider</th>
+                  <th scope="col">Wheel</th>
+                  <th scope="col">Track</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% setups.forEach(function(setup, index) { %>
+                  <% if (index > 0) { %>
+                    <tr>
+                      <td><%= new Date(setup.week).toLocaleDateString() %></td>
+                      <td><%= setup.car %></td>
+                      <td><%= setup.character %></td>
+                      <td><%= setup.glider %></td>
+                      <td><%= setup.wheel %></td>
+                      <td><%= setup.track %></td>
+                    </tr>
+                  <% } %>
+                <% }); %>
+              </tbody>
+            </table>
+          </div>
+        <% } else { %>
+          <p class="mt-5">No setups have been generated yet.</p>
+        <% } %>
+      </div>
+    </main>
+  </body>
+<%- include('partials/_footer.ejs') %>
+  <script src="/js/main.js"></script>
+</html>

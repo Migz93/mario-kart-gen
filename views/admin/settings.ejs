@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/_head.ejs') %>
+<body>
+<%- include('../partials/_header.ejs') %>
+<main role="main" class="container mt-4">
+  <h1>Admin Settings</h1>
+  <form action="/admin/settings" method="POST">
+    <div class="mb-3">
+      <label for="allowNewSignups">Allow New Signups</label>
+      <input type="checkbox" id="allowNewSignups" name="allowNewSignups" class="form-check-input" <%= settings.allowNewSignups ? 'checked' : '' %>>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Settings</button>
+  </form>
+</main>
+<%- include('../partials/_footer.ejs') %>
+<script src="/js/main.js"></script>
+</body>
+</html>

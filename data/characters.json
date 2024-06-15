@@ -1,0 +1,128 @@
+{
+    "Mario": {
+        "Enable": true
+    },
+    "Luigi": {
+        "Enable": true
+    },
+    "Peach": {
+        "Enable": true
+    },
+    "Daisy": {
+        "Enable": true
+    },
+    "Rosalina": {
+        "Enable": true
+    },
+    "Tanooki Mario": {
+        "Enable": true
+    },
+    "Cat Peach": {
+        "Enable": true
+    },
+    "Yoshi": {
+        "Enable": true
+    },
+    "Toad": {
+        "Enable": true
+    },
+    "Koopa Troopa": {
+        "Enable": true
+    },
+    "Shy Guy": {
+        "Enable": true
+    },
+    "Lakitu": {
+        "Enable": true
+    },
+    "Toadette": {
+        "Enable": true
+    },
+    "King Boo": {
+        "Enable": true
+    },
+    "Baby Mario": {
+        "Enable": true
+    },
+    "Baby Luigi": {
+        "Enable": true
+    },
+    "Baby Peach": {
+        "Enable": true
+    },
+    "Baby Daisy": {
+        "Enable": true
+    },
+    "Baby Rosalina": {
+        "Enable": true
+    },
+    "Metal Mario": {
+        "Enable": true
+    },
+    "Pink Gold Peach": {
+        "Enable": true
+    },
+    "Wario": {
+        "Enable": true
+    },
+    "Waluigi": {
+        "Enable": true
+    },
+    "Donkey Kong": {
+        "Enable": true
+    },
+    "Bowser": {
+        "Enable": true
+    },
+    "Dry Bones": {
+        "Enable": true
+    },
+    "Bowser Jr.": {
+        "Enable": true
+    },
+    "Dry Bowser": {
+        "Enable": true
+    },
+    "Lemmy": {
+        "Enable": true
+    },
+    "Larry": {
+        "Enable": true
+    },
+    "Wendy": {
+        "Enable": true
+    },
+    "Ludwig": {
+        "Enable": true
+    },
+    "Iggy": {
+        "Enable": true
+    },
+    "Roy": {
+        "Enable": true
+    },
+    "Morton": {
+        "Enable": true
+    },
+    "Inkling Girl": {
+        "Enable": true
+    },
+    "Inkling Boy": {
+        "Enable": true
+    },
+    "Link": {
+        "Enable": true
+    },
+    "Villager Boy": {
+        "Enable": true
+    },
+    "Villager Girl": {
+        "Enable": true
+    },
+    "Isabelle": {
+        "Enable": true
+    },
+    "Mii": {
+        "Enable": true
+    }
+}
